@@ -164,9 +164,19 @@ nohup ./MaiARKx86 &
 ```
 
 - 单独安装rabbit一键脚本
+#一键更新
+#可用于部署和更新
+
+#国内机：
 ```sh
-bash -c "$(curl -fsSL https://git.gushao.club/https://raw.githubusercontent.com/1302557841/QL/main/rabbit.sh)"
+bash <(curl -s -L https://ghproxy.com/https://raw.githubusercontent.com/AyeSt0/MadRabbit_Utils/master/RabbitUtils.sh)
 ```
+#国外鸡：
+```sh
+bash <(curl -s -L https://raw.githubusercontent.com/AyeSt0/MadRabbit_Utils/master/RabbitUtils.sh)
+```
+#仓库地址：https://github.com/AyeSt0/MadRabbit_Utils
+
 - 单独安装JDX
 ```sh
 docker run -d --restart always -p 5705:80 -v /root/jdx/config:/jdx/config --name jdx aaron8/jdx

@@ -169,7 +169,7 @@ nohup ./MaiARKx86 &
 
 - #国内机：
 ```sh
-bash <(curl -s -L https://ghproxy.com/https://raw.githubusercontent.com/AyeSt0/MadRabbit_Utils/master/RabbitUtils.sh)
+bash <(curl -s -L https://git.gushao.club/https://raw.githubusercontent.com/AyeSt0/MadRabbit_Utils/master/RabbitUtils.sh)
 ```
 - #国外鸡：
 ```sh

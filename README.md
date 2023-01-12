@@ -33,11 +33,11 @@ yum install -y curl wget
 #
 - 国外鸡地址，执行下面一键命令安装青龙+依赖+任务+maiark自由选择（安装完毕后再次使用命令可以对应用进行升级）
 ```sh
-bash -c "$(curl -fsSL https://raw.githubusercontent.com/shidahuilang/QL-/main/lang1.sh)"
+bash -c "$(curl -fsSL https://raw.githubusercontent.com/1302557841/QL/main/lang1.sh)"
 ```
 - 国内鸡地址，执行下面一键命令安装青龙+依赖+任务+maiark自由选择（安装完毕后再次使用命令可以对应用进行升级）
 ```sh
-bash -c "$(curl -fsSL https://ghproxy.com/https://raw.githubusercontent.com/shidahuilang/QL-/main/lang1.sh)"
+bash -c "$(curl -fsSL https://git.gushao.club/https://raw.githubusercontent.com/1302557841/QL/main/lang1.sh)"
 ```
 
 
@@ -105,14 +105,14 @@ canvas
 
 - 一键单独安装docker
 ```sh
-bash -c "$(curl -fsSL https://ghproxy.com/https://raw.githubusercontent.com/shidahuilang/QL-/main/docker.sh)"
+bash -c "$(curl -fsSL https://git.gushao.club/https://raw.githubusercontent.com/1302557841/QL/main/docker.sh)"
 ```
 ```
 wget -qO- https://get.docker.com/ | sh
 ```
 - 一键安装单独青龙的依赖
 ```sh
-docker exec -it qinglong bash -c  "$(curl -fsSL https://ghproxy.com/https://raw.githubusercontent.com/shidahuilang/QL-/main/npm.sh)"
+docker exec -it qinglong bash -c  "$(curl -fsSL https://git.gushao.club/https://raw.githubusercontent.com/1302557841/QL/main/npm.sh)"
 ```
 #### 🚩 单独F2拉库
 F2库
@@ -146,7 +146,7 @@ docker run \
 - 单独安装Maiark
 - X86
 ```
-wget -N --no-check-certificate https://github.com/shidahuilang/QL-/raw/main/MaiARKx86 && chmod 777 MaiARKx86 && ./MaiARKx86
+wget -N --no-check-certificate https://github.com/1302557841/QL/raw/main/MaiARKx86 && chmod 777 MaiARKx86 && ./MaiARKx86
 ```
 - 后台运行
 ```
@@ -165,7 +165,7 @@ nohup ./MaiARKx86 &
 
 - 单独安装rabbit一键脚本
 ```sh
-bash -c "$(curl -fsSL https://ghproxy.com/https://raw.githubusercontent.com/shidahuilang/QL-/main/rabbit.sh)"
+bash -c "$(curl -fsSL https://git.gushao.club/https://raw.githubusercontent.com/1302557841/QL/main/rabbit.sh)"
 ```
 - 单独安装JDX
 ```sh
@@ -174,7 +174,7 @@ docker run -d --restart always -p 5705:80 -v /root/jdx/config:/jdx/config --name
 
 - 单独安装阿东一键脚本（免费有限制，一天扫码2次，低调使用，如有批量需求，请捐赠原作者）
 ```sh
-bash -c "$(curl -fsSL https://ghproxy.com/https://raw.githubusercontent.com/shidahuilang/QL-/main/adong/adong.sh)"
+bash -c "$(curl -fsSL https://git.gushao.club/https://raw.githubusercontent.com/1302557841/QL/main/adong/adong.sh)"
 ```
 
 - 人形bot Docker 一键安装：

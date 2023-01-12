@@ -310,32 +310,32 @@ function sys_kongjian() {
     Available="$(df -h | grep "${QL_Kongjian}" | awk '{print $4}' | awk 'NR==1')"
     FINAL=`echo ${Available: -1}`
     if [[ "${FINAL}" =~ (M|K) ]]; then
-      print_error "敬告：可用空间小于[ ${Sys_kj}G ]，不支持安装青龙${Ql_nvjdc}，请挂载大点磁盘空间容量"
-      exit 1
+      print_error "敬告：可用空间小于[ ${Sys_kj}G ]，可能不支持安装青龙${Ql_nvjdc}，请挂载大点磁盘空间容量"
+      #exit 1
     fi
       Overlay_Available="$(df -h | grep "${QL_Kongjian}" | awk '{print $4}' | awk 'NR==1' | sed 's/.$//g')"
       Kongjian="$(awk -v num1=${Overlay_Available} -v num2=${Sys_kj} 'BEGIN{print(num1>num2)?"0":"1"}')"
       ECHOY "您当前系统可用空间为${Overlay_Available}G"
     if [[ "${Kongjian}" == "1" ]];then
-      print_error "敬告：可用空间小于[ ${Sys_kj}G ]，不支持安装青龙${Ql_nvjdc}，请挂载大点磁盘空间容量"
+      print_error "敬告：可用空间小于[ ${Sys_kj}G ]，可能不支持安装青龙${Ql_nvjdc}，请挂载大点磁盘空间容量"
       sleep 1
-      exit 1
+      #exit 1
     fi
   else
     Ubunkj="$(df -h|grep -v tmpfs |grep "/dev/.*" |awk '{print $4}' |awk 'NR==1')"
     FINAL=`echo ${Ubunkj: -1}`
     if [[ "${FINAL}" =~ (M|K) ]]; then
-      print_error "敬告：可用空间小于[ ${Sys_kj}G ]，不支持安装青龙${Ql_nvjdc}，请加大磁盘空间容量"
+      print_error "敬告：可用空间小于[ ${Sys_kj}G ]，可能不支持安装青龙${Ql_nvjdc}，请加大磁盘空间容量"
       sleep 1
-      exit 1
+      #exit 1
     fi
     Ubuntu_kj="$(df -h|grep -v tmpfs |grep "/dev/.*" |awk '{print $4}' |awk 'NR==1' |sed 's/.$//g')"
     Kongjian="$(awk -v num1=${Ubuntu_kj} -v num2=${Sys_kj} 'BEGIN{print(num1>num2)?"0":"1"}')"
     ECHOY "您当前系统可用空间为${Ubuntu_kj}G"
     if [[ "${Kongjian}" == "1" ]];then
-      print_error "敬告：可用空间小于[ ${Sys_kj}G ]，不支持安装青龙${Ql_nvjdc}，请加大磁盘空间"		
+      print_error "敬告：可用空间小于[ ${Sys_kj}G ]，可能不支持安装青龙${Ql_nvjdc}，请加大磁盘空间"		
       sleep 1
-      exit 1
+      #exit 1
     fi
   fi
 }
@@ -525,19 +525,19 @@ function Google_Check() {
   export Google_Check=$(curl -I -s --connect-timeout 8 google.com -w %{http_code} | tail -n1)
   if [ ! "$Google_Check" == 301 ];then
     export curlurl="https://cdn.jsdelivr.net/gh/shidahuilang/QL-@main"
-    export GithubProxyUrl="https://ghproxy.com/"
+    export GithubProxyUrl="https://git.gushao.club/"
     ECHORR "访问谷歌失败，以下使用代理安装"
     sleep 2
     echo "
     export curlurl="https://cdn.jsdelivr.net/gh/shidahuilang/QL-@main"
-    export GithubProxyUrl="https://ghproxy.com/"
+    export GithubProxyUrl="https://git.gushao.club/"
     " > ${Current}/ghproxy.sh
     sed -i "s/^[ \t]*//g" ${Current}/ghproxy.sh
   else
-    export curlurl="https://raw.githubusercontent.com/shidahuilang/QL-/main"
+    export curlurl="https://raw.githubusercontent.com/1302557841/QL/main"
     export GithubProxyUrl=""
     echo "
-    export curlurl="https://raw.githubusercontent.com/shidahuilang/QL-/main"
+    export curlurl="https://raw.githubusercontent.com/1302557841/QL/main"
     export GithubProxyUrl=""
     " > ${Current}/ghproxy.sh
     sed -i "s/^[ \t]*//g" ${Current}/ghproxy.sh

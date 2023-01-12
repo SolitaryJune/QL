@@ -119,12 +119,86 @@ F2库
 ```sh
 ql repo https://github.com/shufflewzc/faker2.git "jd_|jx_|gua_|jddj_|jdCookie" "activity|backUp" "^jd[^_]|USER|function|utils|sendNotify|ZooFaker_Necklace.js|JDJRValidator_|sign_graphics_validate|ql|JDSignValidator" "main"
 task disableDuplicateTasksImplement.py
+```
 
-```
-大灰狼备份库
+yyds
 ```sh
-ql repo https://github.com/shidahuilang/f2.git "jd_|jx_|gua_|jddj_|jdCookie" "activity|backUp" "^jd[^_]|USER|function|utils|sendNotify|ZooFaker_Necklace.js|JDJRValidator_|sign_graphics_validate|ql|JDSignValidator|magic|depend|h5sts" "main"
+ql repo https://github.com/okyyds/yyds.git "jd_|jx_|gua_|jddj_|m|jdCookie" "activity|backUp" "^jd[^_]|USER|function|utils|sendNotify|ZooFaker_Necklace.js|JDJRValidator_|sign_graphics_validate|ql|JDSignValidator" "master"
 ```
+
+feverrun【内部互助版】 (集合库)
+【群组地址】https://t.me/proenv
+【频道地址】https://t.me/proenvc
+【仓库地址】https://github.com/feverrun/my_scripts
+```sh
+ql repo https://github.com/feverrun/my_scripts.git "jd_|jx_|jddj_|getCookie|getJDCookie" "backUp/activity|backUp/card|backUp/py|backUp/utils/|backUp/test|jd_fruits.js|jd_pet.js|jd_factory.js|jd_health.js|jd_sgmh.js|jd_dreamFactory.js|jd_plantBean.js" "^(jd|JD|JS)[^_]|USER|sendNotify|utils"
+```
+
+青蛙https://t.me/s_guaguagua
+部分需要进tg拿token
+```sh
+ql repo https://github.com/smiek2121/scripts.git "jd_|gua_" "" "ZooFaker_Necklace.js|JDJRValidator_Pure.js|sign_graphics_validate.js|cleancart_activity.js|jdCookie.js|sendNotify.js"
+```
+
+船长
+使用教程：https://t.me/HarbourToulu/3052
+【🛳船长库脚本汇总及变量🛳】
+🛳 🛳jinggeng邀请入会有礼 (jd_jinggengInvite.py)
+变量: export jinggengInviteJoin="活动&shopid"
+
+🛳 🛳微定制组队通用脚本（jd_wdz.py）
+变量: export jd_wdz_activityId="活动"
+
+🛳 🛳邀好友赢大礼（jd_inviteFriendsGift.py）
+变量: export jd_inv_authorCode="活动"
+
+🛳 🛳一键领取店铺会员礼包（jd_shopCollectGift.py）
+变量: export jd_shopCollectGiftId="活动"
+
+🛳 🛳特效关注有礼 (jd_wxShopGift.py)
+变量: export jd_wxShopGiftId="活动"
+
+🛳 🛳生日礼包（jd_wxBirthGifts.py）
+变量: export jd_wxBirthGiftsId="活动"
+
+🛳 🛳完善信息有礼（jd_wxCompleteInfo.py）
+变量: export jd_wxCompleteInfoId="活动&venderId"
+
+🛳 🛳加购有礼（jd_wxCollectionActivity.py）
+变量: export jd_wxCollectionActivityUrl="活动🔗" 
+默认跑前10个账号，可自定义运行加购账号数量，变量：export jd_wxCollectionActivityRunNums="需要运行加购脚本的账号数量"
+
+🛳 🛳通用开卡-shopLeague系列脚本（jd_shopLeague_opencard.py）
+变量: export jd_shopLeagueId="活动"
+并发变量: export jd_shopLeagueId_uuid=“你的助力码”
+
+🛳 🛳通用开卡-joinCommon系列脚本（jd_joinCommon_opencard.py）
+脚本变量: export jd_joinCommonId="活动&shopid"
+并发变量: export jd_joinCommon_uuid=“你的助力码”
+
+注：请先安装python依赖 redis、bs4两种依赖
+docker-redis安装教程: 
+①.先安装redis
+复制以下命令到ssh一键安装
+mkdir -p /mydata/redis/conf
+touch /mydata/redis/conf/redis.conf
+docker run -p 6379:6379 --name redis \
+-v /mydata/redis/data:/data \
+-v /mydata/redis/conf/redis.conf:/etc/redis/redis.conf \
+-itd redis redis-server /etc/redis/redis.conf \
+--appendonly yes
+②.再青龙安装Python的redis依赖 （依赖管理 python3-->新建依赖-->redis）
+redis环境变量(不填就是默认ip:port)：
+export redis_url="redis服务器ip"  #填redis服务器ip
+export redis_port="redis服务器端口"   #支持更换自定义端口
+export redis_pwd=""  #没设置密码就空着
+
+本地sign.so安装教程: 拉库, 运行HarbourJ库依赖一键安装脚本（jd_check_dependent.py）, 实现一键式全自动安装sign本地依赖文件；全自动报错也可去【 https://github.com/HarbourJ/HarbourToulu/releases 】下载架构与Py版本适配的文件解压放置 /青龙/scripts/HarbourJ_HarbourToulu_main文件夹内。
+```sh
+ql repo https://github.com/HarbourJ/HarbourToulu.git "jd_" "activity|backUp|jd_sign" "^jd[^_]|USER|utils|ZooFaker_Necklace|JDJRValidator_|sign_graphics_validate|jddj_cookie|function|ql|magic|JDJR|JD|sendNotify" "main"
+```
+
+
 #
 - 傻妞一键安装
 ```
@@ -163,19 +237,16 @@ nohup ./MaiARKx86 &
     kissyouhunter/maiark
 ```
 
-- 单独安装rabbit一键脚本
-- #一键更新
-- #可用于部署和更新
-
-- #国内机：
+- 单独安装rabbit一键脚本#一键更新#可用于部署和更新
+- 国内机：
 ```sh
 bash <(curl -s -L https://git.gushao.club/https://raw.githubusercontent.com/AyeSt0/MadRabbit_Utils/master/RabbitUtils.sh)
 ```
-- #国外鸡：
+- 国外鸡：
 ```sh
 bash <(curl -s -L https://raw.githubusercontent.com/AyeSt0/MadRabbit_Utils/master/RabbitUtils.sh)
 ```
-- #仓库地址：https://github.com/AyeSt0/MadRabbit_Utils
+- 仓库地址：https://github.com/AyeSt0/MadRabbit_Utils
 
 - 单独安装JDX
 ```sh
@@ -199,4 +270,3 @@ wget https://raw.githubusercontent.com/TeamPGM/PagerMaid-Pyro/development/utils/
 > [`feverrun`]
 > [`Aaron-lv`]
 > [`faker2`] 
-

@@ -240,7 +240,7 @@ nohup ./MaiARKx86 &
 - 单独安装rabbit一键脚本#一键更新#可用于部署和更新
 - 国内机：
 ```sh
-bash <(curl -s -L https://git.gushao.club/https://raw.githubusercontent.com/AyeSt0/MadRabbit_Utils/master/RabbitUtils.sh)
+bash <(curl -s -L https://git.gushao.club/https://github.com/1302557841/QL/raw/main/RabbitUtils.sh)
 ```
 - 国外鸡：
 ```sh

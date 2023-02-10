@@ -77,10 +77,10 @@ pt_key=您的pt_key值;pt_pin=您的账号;
 - ####  依赖管理 --> 添加依赖 --> 依赖类型(NodeJs) --> 自动拆分(是) --> 名称(把下面依赖名称全复制粘贴) --> 确定 
 安装不上执行
 ```sh
- docker exec -it qinglong  npm install npm@6.14.10 -g
+ docker exec -it qinglong  cnpm install npm@8.1.2	 -g
 ```
+安装完成后执行
 ```sh
- 安装完成后执行
   docker exec -it qinglong    npm i -g stable
 ```
 ```sh

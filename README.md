@@ -80,6 +80,10 @@ pt_key=您的pt_key值;pt_pin=您的账号;
  docker exec -it qinglong  npm install npm@6.14.10 -g
 ```
 ```sh
+ 安装完成后执行
+  docker exec -it qinglong    npm i -g stable
+```
+```sh
 date-fns
 axios
 ts-node

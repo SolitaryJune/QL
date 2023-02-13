@@ -84,6 +84,9 @@ pt_key=您的pt_key值;pt_pin=您的账号;
   docker exec -it qinglong    npm i -g stable
 ```
 ```sh
+  docker exec -it qinglong   npm config set registry https://registry.npmmirror.com/
+```
+```sh
 date-fns
 axios
 ts-node

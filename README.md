@@ -259,6 +259,11 @@ bash <(curl -s -L https://git.gushao.club/https://github.com/1302557841/QL/raw/m
 ```sh
 bash <(curl -s -L https://raw.githubusercontent.com/AyeSt0/MadRabbit_Utils/master/RabbitUtils.sh)
 ```
+- Qrabbit：
+```sh
+bash <(curl -s -L https://git.gushao.club/https://raw.githubusercontent.com/AyeSt0/MadRabbit_Utils/master/QRabbitUtils.sh)
+```
+
 - 仓库地址：https://github.com/AyeSt0/MadRabbit_Utils
 
 - 单独安装JDX

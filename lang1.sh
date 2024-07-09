@@ -237,7 +237,7 @@ function system_docker() {
   else
     if [[ ! -x "$(command -v docker)" ]]; then
       ECHOR "没检测到docker，正在安装docker"
-      bash -c "$(curl -fsSL ${curlurl}/docker.sh)"
+      bash -c "$(curl -fsSL https://git.gushao.club/https://raw.githubusercontent.com/1302557841/QL/main/docker.sh)"
     fi
   fi
 }

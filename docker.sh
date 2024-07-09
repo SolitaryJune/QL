@@ -227,7 +227,7 @@ function docker_daemon() {
 sudo mkdir -p /etc/docker
 cat >/etc/docker/daemon.json <<-EOF
 {
-    "registry-mirrors": ["https://qndprgwv.mirror.aliyuncs.com"],
+    "registry-mirrors": ["https://docker.gushao.club"],
     "runtimes": {
         "nvidia": {
             "path": "/usr/bin/nvidia-container-runtime",

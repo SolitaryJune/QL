@@ -237,7 +237,7 @@ function system_docker() {
   else
     if [[ ! -x "$(command -v docker)" ]]; then
       ECHOR "没检测到docker，正在安装docker"
-      bash -c "$(curl -fsSL https://git.gushao.club/https://raw.githubusercontent.com/1302557841/QL/main/docker.sh)"
+      bash -c "$(curl -fsSL https://git.gushao.club/https://raw.githubusercontent.com/SolitaryJune/QL/main/docker.sh)"
     fi
   fi
 }
@@ -356,7 +356,7 @@ docker run -dit \
   --name qinglong \
   --hostname qinglong \
   --restart always \
-  btf6gsjy.mirror.aliyuncs.com/whyour/qinglong:2.10.13
+  docker.gushao.club/whyour/qinglong:2.10.13
   
   docker restart qinglong > /dev/null 2>&1
   sleep 2
@@ -534,11 +534,11 @@ function Google_Check() {
     " > ${Current}/ghproxy.sh
     sed -i "s/^[ \t]*//g" ${Current}/ghproxy.sh
   else
-    export curlurl="https://raw.githubusercontent.com/1302557841/QL/main"
-    export GithubProxyUrl=""
+    export curlurl="https://raw.githubusercontent.com/SolitaryJune/QL/main"
+    export GithubProxyUrl="https://git.gushao.club/"
     echo "
-    export curlurl="https://raw.githubusercontent.com/1302557841/QL/main"
-    export GithubProxyUrl=""
+    export curlurl="https://raw.githubusercontent.com/SolitaryJune/QL/main"
+    export GithubProxyUrl="https://git.gushao.club/"
     " > ${Current}/ghproxy.sh
     sed -i "s/^[ \t]*//g" ${Current}/ghproxy.sh
   fi

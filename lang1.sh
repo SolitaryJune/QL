@@ -356,7 +356,7 @@ docker run -dit \
   --name qinglong \
   --hostname qinglong \
   --restart always \
-  whyour/qinglong:2.10.13
+  btf6gsjy.mirror.aliyuncs.com/whyour/qinglong:2.10.13
   
   docker restart qinglong > /dev/null 2>&1
   sleep 2

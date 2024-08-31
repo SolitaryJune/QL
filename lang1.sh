@@ -356,7 +356,7 @@ docker run -dit \
   --name qinglong \
   --hostname qinglong \
   --restart always \
-  m.daocloud.io/docker.io/whyour/qinglong:debian
+  m.daocloud.io/docker.io/whyour/qinglong:latest
   
   docker restart qinglong > /dev/null 2>&1
   sleep 2
